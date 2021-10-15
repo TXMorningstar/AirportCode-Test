@@ -1,5 +1,6 @@
 # coding=utf-8
 import random
+import time
 
 SUBJECT_LIST = ["三字代码", "城市", "机场名称", "省份"]
 SUBJECT_DICT = {
@@ -69,7 +70,6 @@ def gen_quiz(data, quest=None, key=1):
             print("回答错误，%s 的 %s 是 \"%s\"" % (
                 data[quest][key], SUBJECT_LIST[sequence], data[quest][sequence]))
             result[1] = True
-
     return result
 
 
@@ -86,12 +86,18 @@ def quiz(data, key=1):
 
 
 def print_result(data, result):
+    total = data.__len__()
+    correct = total - result.__len__()
+    percent = (correct/total)*100
     print()
     print("==================考试结束=====================")
     print()
     if result == []:
         print("恭喜你，全部正确")
         return
+    print("你答对的题目数为%s/%s，正确率为%s%%" % (correct, total, percent))
+    time.sleep(3)
+    print()
     print("你的错题为：")
     for i in result:
         print(data[i])
@@ -117,6 +123,7 @@ def main():
     sorted_airport_list = sort_list(airport_code_list)
     result = quiz(sorted_airport_list, key=key)
     print_result(sorted_airport_list, result)
+    time.sleep(1024)
 
 
 if __name__ == "__main__":
