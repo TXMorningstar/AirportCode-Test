@@ -98,7 +98,7 @@ def print_result(data, result):
 
 def get_key():
     while True:
-        msg = input("你想考察\"三字代码\", \"城市\", \"机场名称\", \"省份\中的哪一项？")
+        msg = input("你想考察\"三字代码\", \"城市\", \"机场名称\", \"省份\"中的哪一项？")
         result = SUBJECT_DICT.get(msg)
         if result:
             print()
