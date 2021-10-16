@@ -104,12 +104,11 @@ def print_result(data, result):
 
 def get_key():
     while True:
-        msg = input("你想考察\"三字代码\", \"城市\", \"机场名称\", \"省份\"中的哪一项？")
+        msg = input("你想考察\"三字代码\", \"城市\", \"机场名称\", \"省份\"中的哪一项？\n>>")
         result = SUBJECT_DICT.get(msg)
         if result:
             print()
             print()
-            print("========================考试开始==========================")
             break
         print()
         print("非法输入，请输入你想考察的科目名称，例：城市")
@@ -117,13 +116,30 @@ def get_key():
         print("--------------------------------")
     return result
 
+def list_filter(data, sequence):
+    """过滤列表，保留特定的信息"""
+    new_data = list()
+    for i in range(data.__len__()):
+        if i in sequence:
+            new_data.append(data[i])
+    return new_data
+
 def main():
-    key = get_key()
     airport_code_list = read_file("database.txt")
+    key = get_key()
     sorted_airport_list = sort_list(airport_code_list)
-    result = quiz(sorted_airport_list, key=key)
-    print_result(sorted_airport_list, result)
-    time.sleep(1024)
+    while True:
+        print("========================考试开始==========================")
+        result = quiz(sorted_airport_list, key=key)
+        print_result(sorted_airport_list, result)
+        print("\n")
+        next_move = input("继续考试？\n输入1重新考试\n输入2重做错题\n不输入将退出\n>>")
+        if next_move == "":
+            break
+        elif next_move == "2":
+            sorted_airport_list = list_filter(sorted_airport_list, result)
+            if not sorted_airport_list:
+                break
 
 
 if __name__ == "__main__":
