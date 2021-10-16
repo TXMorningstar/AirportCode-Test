@@ -47,6 +47,12 @@ def gen_random_sequence_list(data):
     random.shuffle(result)
     return result
 
+def gen_normal_sequence_list(data):
+    result = list()
+    for i in range(data.__len__()):
+        result.append(i)
+    return result
+
 def gen_quiz(data, quest=None, key=1):
     """根据数据生成单个题目"""
     if quest == None:
@@ -73,9 +79,12 @@ def gen_quiz(data, quest=None, key=1):
     return result
 
 
-def quiz(data, key=1):
+def quiz(data, key=1, mode="1"):
     """生成一个完整的试卷"""
-    sequence_list = gen_random_sequence_list(data)
+    if mode == "2":
+        sequence_list = gen_random_sequence_list(data)
+    else:
+        sequence_list = gen_normal_sequence_list(data)
     result = list()
     for i in sequence_list:
         ret = gen_quiz(data, i, key)
@@ -110,11 +119,24 @@ def get_key():
             print()
             print()
             break
-        print()
-        print("非法输入，请输入你想考察的科目名称，例：城市")
-        print("你不需要输入双引号")
-        print("--------------------------------")
+        else:
+            print()
+            print("非法输入，请输入你想考察的科目名称，例：城市")
+            print("你不需要输入双引号")
+            print("--------------------------------")
     return result
+
+def gen_mode():
+    while True:
+        mode = input("如何考试？\n输入1顺序考试\n输入2乱序考试\n>>")
+        if mode in ("1", "2"):
+            return mode
+        else:
+            print()
+            print("非法输入，请输入\"1\"或\"2\"")
+            print("你不需要输入双引号")
+            print("--------------------------------")
+
 
 def list_filter(data, sequence):
     """过滤列表，保留特定的信息"""
@@ -125,17 +147,23 @@ def list_filter(data, sequence):
     return new_data
 
 def main():
-    airport_code_list = read_file("database.txt")
-    key = get_key()
-    sorted_airport_list = sort_list(airport_code_list)
+    restart = True
     while True:
+        if restart:
+            restart = False
+            airport_code_list = read_file("database.txt")
+            key = get_key()
+            mode = gen_mode()
+            sorted_airport_list = sort_list(airport_code_list)
         print("========================考试开始==========================")
-        result = quiz(sorted_airport_list, key=key)
+        result = quiz(sorted_airport_list, key=key, mode=mode)
         print_result(sorted_airport_list, result)
         print("\n")
         next_move = input("继续考试？\n输入1重新考试\n输入2重做错题\n不输入将退出\n>>")
         if next_move == "":
             break
+        elif next_move == "1":
+            restart = True
         elif next_move == "2":
             sorted_airport_list = list_filter(sorted_airport_list, result)
             if not sorted_airport_list:
@@ -144,3 +172,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
