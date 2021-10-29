@@ -1,64 +1,64 @@
-PEK 北京 首都 北京
-BHY 北海 福成 广西
-CAN 广州 白云 广东
-CGO 郑州 新郑 河南
-CGQ 长春 龙嘉 吉林
-CKG 重庆 江北 重庆市
-CSX 长沙 黄花 湖南
-CTU 成都 双流 四川
-CZX 常州 奔牛 江苏
-DDG 丹东 浪头 辽宁
-DLC 大连 周水子 辽宁
-FOC 福州 长乐 福建
-HAK 海口 美兰 海南
-HFE 合肥 骆岗 安徽
-HGH 杭州 萧山 浙江
-HNY 衡阳 东江 湖南
-HRB 哈尔滨 太平 黑龙江
-KHN 南昌 昌北 江西
-KMG 昆明 巫家坝 云南
-KOW 赣州 黄金 江西
-KWE 贵阳 龙洞堡 贵州
-KWL 桂林 两江 广西
-LYG 连云港 白塔埠 江苏
-NNG 南宁 吴圩 广西
-NNY 南阳 姜营 河南
-NTG 南通 兴东 江苏
-SHA 上海 虹桥 上海市
-PVG 上海 浦东 上海市
-SHE 沈阳 桃仙 辽宁
-SHS 沙市 沙市 湖北
-XIY 西安 咸阳 陕西
-SWA 汕头 外砂 广东
-SZX 深圳 宝安 广东
-TAO 青岛 流亭 山东
-TNA 济南 遥墙 山东
-TSN 天津 滨海 天津市
-TXN 黄山 屯溪 安徽
-INC 银川 河东 宁夏
-LHW 兰州 中川 甘肃
-WUH 武汉 天河 湖北
-WNZ 温州 永强 浙江
-XFN 襄樊 刘集 湖北
-XUZ 徐州 观音 江苏
-XMN 厦门 曹家堡 青海
-MFM 澳门 澳门 澳门
-TPE 台湾 桃园 台湾
-TSA 台湾 松山 台湾
-PKX 北京 大庆 北京
-SZV 苏州 高福 江苏
-HKG 香港 香港 香港
-LYA 洛阳 北郊 河南
-LZH 柳州 白莲 广西
-MDG 牡丹江 海浪 广西
-MXZ 梅县 梅县 广东
-NDG 齐齐哈尔 三家子 黑龙江
-NGB 宁波 栎社 浙江
-NKG 南京 禄口 江苏
-TYN 太原 武宿 山西
-URC 乌鲁木齐 地窝堡 新疆
-YNT 烟台 莱山 山东
-YIW 义乌 义乌 浙江
-ZHA 湛江 新塘 广东
-ZHU 珠海 三灶 广东
-LXA 拉萨 贡嘎 西藏
+PEK 北京 首都
+BHY 北海 福成
+CAN 广州 白云
+CGO 郑州 新郑
+CGQ 长春 龙嘉
+CKG 重庆 江北
+CSX 长沙 黄花
+CTU 成都 双流
+CZX 常州 奔牛
+DDG 丹东 浪头
+DLC 大连 周水子
+FOC 福州 长乐
+HAK 海口 美兰
+HFE 合肥 骆岗
+HGH 杭州 萧山
+HNY 衡阳 东江
+HRB 哈尔滨 太平
+KHN 南昌 昌北
+KMG 昆明 巫家坝
+KOW 赣州 黄金
+KWE 贵阳 龙洞堡
+KWL 桂林 两江
+LYG 连云港 白塔埠
+NNG 南宁 吴圩
+NNY 南阳 姜营
+NTG 南通 兴东
+SHA 上海 虹桥
+PVG 上海 浦东
+SHE 沈阳 桃仙
+SHS 沙市 沙市
+XIY 西安 咸阳
+SWA 汕头 外砂
+SZX 深圳 宝安
+TAO 青岛 流亭
+TNA 济南 遥墙
+TSN 天津 滨海
+TXN 黄山 屯溪
+INC 银川 河东
+LHW 兰州 中川
+WUH 武汉 天河
+WNZ 温州 永强
+XFN 襄樊 刘集
+XUZ 徐州 观音
+XMN 厦门 曹家堡
+MFM 澳门 澳门
+TPE 台湾 桃园
+TSA 台湾 松山
+PKX 北京 大庆
+SZV 苏州 高福
+HKG 香港 香港
+LYA 洛阳 北郊
+LZH 柳州 白莲
+MDG 牡丹江 海浪
+MXZ 梅县 梅县
+NDG 齐齐哈尔 三家子
+NGB 宁波 栎社
+NKG 南京 禄口
+TYN 太原 武宿
+URC 乌鲁木齐 地窝堡
+YNT 烟台 莱山
+YIW 义乌 义乌
+ZHA 湛江 新塘
+ZHU 珠海 三灶
+LXA 拉萨 贡嘎
